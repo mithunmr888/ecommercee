@@ -1,0 +1,42 @@
+.header {
+  position: fixed;
+  display: flex;
+  font-family: "Times New Roman", Times, serif;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2.5rem;
+  background-color: #000000;
+  color: white;
+  padding: 0 10%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+
+  font-size: 1.4rem;
+}
+
+.header a h1 {
+  margin-right: 5rem;
+  font-size: 1.3rem;
+}
+
+.generics {
+  position: relative;
+  display: flex;
+  font-family: "Times New Roman", Times, serif;
+  padding-top: -1rem;
+  padding-bottom: 3rem;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2.59rem;
+  width: 100%;
+  background-color: #5e5e5e;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  font-weight: bold;
+  font-size: 6rem;
+}
+
