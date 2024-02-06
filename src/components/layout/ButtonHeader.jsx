@@ -5,7 +5,7 @@ const ButtonHeader = (props) => {
     <>
       <button
         className="cursor-pointer font-inherit border-2 border-blue-400 bg-black 
-                             mr-1 text-white px-2 py-0.1 flex items-center rounded-full font-bold text-lg"
+                             mr-0.5 text-white px-2 py-0.1 flex items-center rounded-full font-bold text-lg"
       >
         cart
       </button>

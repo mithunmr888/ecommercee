@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+
+h1 {
+  font-family: "Caveat", cursive;
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+ .btnbtm {
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
+  border: 2px solid #72e5ff;
+  background-color: #7f7f7f;
+  margin-bottom: 2rem;
+  margin-left: 43.5rem;
+  color: #72e5ff;
+  padding: 1.5rem 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.btnbtm:hover,
+.btnbtm:active {
+  background-color: #4e4e4e;
+}
+

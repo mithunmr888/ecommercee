@@ -21,7 +21,7 @@ const Headertop = (props) => {
       </header>
       <div
         className="relative flex font-serif justify-center text-center mt-11 w-full 
-                          bg-gray-700 text-white shadow-md z-10 font-bold text-8xl pb-20"
+                          bg-gray-500 text-white shadow-md z-0 font-bold text-8xl pb-20"
       >
         The Generics
       </div>
