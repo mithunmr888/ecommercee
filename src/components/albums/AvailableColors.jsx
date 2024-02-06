@@ -38,7 +38,7 @@ const dummy_colors = [
 
 const AvailableColors = (props) => {
   return (
-    <section className="grid grid-cols-2 gap-5 justify-center items-center">
+    <section className="grid grid-cols-2 gap-5 mt-20 justify-center items-center">
       {dummy_colors.map((color, index) => (
         <ColorItems
           key={Math.random().toString()}
