@@ -36,6 +36,24 @@ const dummy_colors = [
   },
 ];
 
+const AvailableColors = (props) => {
+  return (
+    <section className="grid grid-cols-2 gap-5 justify-center items-center">
+      {dummy_colors.map((color, index) => (
+        <ColorItems
+          key={Math.random().toString()}
+          title={color.title}
+          price={color.price}
+          image={color.imageUrl}
+        />
+      ))}
+    </section>
+  );
+};
+
+export default AvailableColors;
+
+/*
 const colors = dummy_colors.map((color) => {
   return (
     <ColorItems
@@ -46,13 +64,10 @@ const colors = dummy_colors.map((color) => {
   );
 });
 
-const AvailableColors = (props) => {
-  return (
+ return (
     <>
      
       <section className={classes.coloumn}>{colors}</section>
     </>
   );
-};
-
-export default AvailableColors;
+*/

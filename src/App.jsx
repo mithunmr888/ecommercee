@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./App.module.css";
 import Headertop from "./components/layout/Headertop";
-import AvailableColors from "./components/cart/AvailableColors";
+import AvailableColors from "./components/albums/AvailableColors";
 
 const App = () => {
   return (
