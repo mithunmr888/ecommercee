@@ -17,7 +17,7 @@ const Headertop = (props) => {
         <a href="/" className="mr-40 text-1.3rem">
           ABOUT
         </a>
-        <ButtonHeader />
+        <ButtonHeader onOpen={props.onOpen}/>
       </header>
       <div
         className="relative flex font-serif justify-center text-center mt-11 w-full 

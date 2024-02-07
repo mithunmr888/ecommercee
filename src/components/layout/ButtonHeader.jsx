@@ -3,7 +3,7 @@ import classes from "./ButtonHeader.module.css";
 const ButtonHeader = (props) => {
   return (
     <>
-      <button
+      <button onClick={props.onOpen}
         className="cursor-pointer font-inherit border-2 border-blue-400 bg-black 
                              mr-0.5 text-white px-2 py-0.1 flex items-center rounded-full font-bold text-lg"
       >

@@ -1,0 +1,52 @@
+.cart-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 15rem;
+  font-family: 'Times New Roman', Times, serif;
+  overflow: scroll; /* Change to auto for better scrolling */
+}
+.carthead h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-around;
+}
+.heading h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 1rem 2rem;
+}
+
+.total span {
+  color: rgb(0, 0, 0);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.purchase {
+  font-weight: bold;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid rgb(0, 0, 0);
+  height: 2rem;
+  padding: 0.3rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
+ 
+}
+
+.purchase:hover,
+.purchase:active {
+  background-color: #4d4d4d;
+}
