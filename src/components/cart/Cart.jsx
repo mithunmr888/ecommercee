@@ -1,6 +1,8 @@
 import classes from "./Cart.module.css";
 import Modal from "./Modal";
 import CartColors from "./CartColors";
+import CartContext from "../../store/cart-context";
+import { useContext } from "react";
 
 const items = [
   {
@@ -35,16 +37,24 @@ const items = [
 ];
 
 const Cart = (props) => {
+  const crtCtx = useContext(CartContext);
+  const totalAmount = `₹${crtCtx.totalAmount}`;
+  const cartItemRemoveHandler = (id) => {
+    crtCtx.removeItem(id);
+  };
+
   const cartItems = (
     <ul className={classes["cartitems"]}>
-      {items.map((item) => {
+      {crtCtx.items.map((item) => {
         return (
           <CartColors
-            key={Math.random().toString()}
+            key={item.key}
+            id={item.id}
             title={item.title}
             price={item.price}
-            quantity={item.quantity}
-            image={item.imageUrl}
+            image={item.image}
+            amount={item.amount}
+            onRemove={cartItemRemoveHandler.bind(null, item.id)}
           ></CartColors>
         );
       })}
@@ -66,7 +76,7 @@ const Cart = (props) => {
       {cartItems}
       <div className="total flex justify-between font-bold text-2xl my-4 mx-4">
         <span className=" text-amber-800">Total</span>
-        <span className=" text-amber-800">₹200</span>
+        <span className=" text-amber-800">{totalAmount}</span>
       </div>
       <button className="font-bold text-black bg-white border border-black h-9 px-5 rounded-md cursor-pointer hover:bg-gray-700 hover:text-white transition duration-300 ease-in-out">
         PURCHASE

@@ -1,20 +1,28 @@
 import classes from "./CartColors.module.css";
 
 const CartColors = (props) => {
+  const quantity = (
+    <input
+      type="number"
+      id="quantity"
+      defaultValue={props.amount}
+      className="border border-gray-400 rounded-md text-center h-8 w-10 mt-1 mr-2 focus:outline-none focus:ring focus:border-blue-300"
+    />
+  );
   return (
-    <li className=" flex justify-between items-center border-b-2 border-gray-300 p-4 font-serif">
+    <li className="flex justify-between items-center border-b-2 border-gray-300 p-4 font-serif">
       <img
         src={props.image}
         alt={props.title}
         className="w-24 rounded-md mr-2"
       />
-      <div className="flex justify-center">
-        <h2 className="text-lg text-center mr-2 p-1 px-1 py-1">{props.title}</h2>
+      <div className="flex justify-center items-center">
+        <h2 className="text-lg text-center mr-2 p-1 px-1 py-1">
+          {props.title}
+        </h2>
         <span className="font-bold text-black mt-1 mr-2">₹{props.price}</span>
-        <span className="font-bold  text-blue-700 border border-gray-400 h-6 w-10 rounded-md text-center mt-1 mr-2">
-          {props.quantity}
-        </span>
-        <button className="button bg-red-500 text-white border text-xs border-red-500 mt-0 px-0.5 scroll-py-0.5 rounded-md hover:bg-red-600">
+        {quantity}
+        <button onClick={props.onRemove} className="button bg-red-500 text-white border text-xs border-red-500 mt-0 px-2 py-1 rounded-md hover:bg-red-600">
           REMOVE
         </button>
       </div>

@@ -4,6 +4,7 @@ import ColorItems from "./ColorItems";
 
 const dummy_colors = [
   {
+    id: 1,
     title: "Colors",
 
     price: 100,
@@ -12,6 +13,7 @@ const dummy_colors = [
   },
 
   {
+    id: 2,
     title: "Black and white Colors",
 
     price: 50,
@@ -20,6 +22,7 @@ const dummy_colors = [
   },
 
   {
+    id: 3,
     title: "Yellow and Black Colors",
 
     price: 70,
@@ -28,6 +31,7 @@ const dummy_colors = [
   },
 
   {
+    id: 4,
     title: "Blue Color",
 
     price: 100,
@@ -39,9 +43,10 @@ const dummy_colors = [
 const AvailableColors = (props) => {
   return (
     <section className="grid grid-cols-2 gap-5 mt-20 justify-center items-center">
-      {dummy_colors.map((color, index) => (
+      {dummy_colors.map((color) => (
         <ColorItems
-          key={Math.random().toString()}
+          id={color.id}
+          key={color.id}
           title={color.title}
           price={color.price}
           image={color.imageUrl}
